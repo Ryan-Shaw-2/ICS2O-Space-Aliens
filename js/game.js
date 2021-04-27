@@ -1,7 +1,7 @@
 /* global Phaser */
 
 // Copyright (c) 2020 Ryan-Shaw-2 All rights reserved
-// 
+//
 // Created by: Ryan-Shaw-2
 // Created on: Apr 2021
 // This is the Phaser3 configuration file
