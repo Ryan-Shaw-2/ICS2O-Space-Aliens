@@ -8,7 +8,7 @@
 
 import SplashScene from './splashScene.js'
 
-//Our game Scene
+// Our game Scene
 const splashScene = new SplashScene()
 
 //* Game Scene */

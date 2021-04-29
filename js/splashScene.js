@@ -4,7 +4,7 @@
 //
 // Created by: Ryan-Shaw-2
 // Created on: Apr 2021
-// This is the Phaser3 configuration file
+// This is the Splash Scene
 
 class SplashScene extends Phaser.Scene {
   constructor () {
@@ -12,17 +12,17 @@ class SplashScene extends Phaser.Scene {
   }
 
   init (data) {
-    this.camaras.main.setBackgroundColor('#ffffff')
+    this.cameras.main.setBackgroundColor('#ffffff')
   }
 
   preload () {
     console.log('Splash Scene')
   }
 
-  create (data) {  
+  create (data) {
   }
 
-  update (time, delta) {  
+  update (time, delta) {
   }
 }
 
