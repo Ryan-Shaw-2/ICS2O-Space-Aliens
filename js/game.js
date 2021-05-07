@@ -1,6 +1,6 @@
 /* global Phaser */
 
-// Copyright (c) 2020 Ryan-Shaw-2 All rights reserved
+// Copyright (c) 2021 Ryan-Shaw-2 All rights reserved
 //
 // Created by: Ryan-Shaw-2
 // Created on: Apr 2021
@@ -8,10 +8,12 @@
 
 import SplashScene from './splashScene.js'
 import TitleScene from './titleScene.js'
+import MenuScene from './menuScene.js'
 
 // Our game Scenes
 const splashScene = new SplashScene()
 const titleScene = new TitleScene()
+const menuScene = new MenuScene()
 
 //* Game Scene */
 const config = {
@@ -39,6 +41,7 @@ const game = new Phaser.Game(config)
 // NOTE: remember any "key" is global and CAN NOT be reused
 game.scene.add('splashScene', splashScene)
 game.scene.add('titleScene', titleScene)
+game.scene.add('menuScene', menuScene)
 
 // start title
 game.scene.start('splashScene')
