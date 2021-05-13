@@ -9,9 +9,9 @@
 class MenuScene extends Phaser.Scene {
   constructor () {
     super({ key: 'menuScene' })
-    
-    this.menuSceneBackgroundImage = null
-    this.startButton = null
+
+    this.background = null
+    this.ship = null
   }
 
   init (data) {
@@ -20,8 +20,10 @@ class MenuScene extends Phaser.Scene {
 
   preload () {
     console.log('Menu Scene')
-    this.load.image('menuSceneBackground', 'assets/aliens_screen_image2.jpg')
-    this.load.image('startButton', 'assets/start.png')
+
+    // images
+    this.load.image('starBackground', 'assets/starBackground.png')
+    this.load.image('ship', 'assets/spaceShip.png')
   }
 
   create (data) {
