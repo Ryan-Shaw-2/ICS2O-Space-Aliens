@@ -33,6 +33,38 @@ class GameScene extends Phaser.Scene {
   }
 
   update (time, delta) {
+    // called 60 times a setBackgroundColor
+
+    const keyLeftObj = this.input.keyboard.addKey('A')
+    const keyRightObj = this.input.keyboard.addKey('D')
+    const keyUpObj = this.input.keyboard.addKey('W')
+    const keyDownObj = this.input.keyboard.addKey('S')
+
+    if (keyLeftObj.isDown === true) {
+      this.ship.x = this.ship.x -= 7
+      if (this.ship.x < 0) {
+        this.ship.x = 0
+      }
+    }
+
+    if (keyRightObj.isDown === true) {
+      this.ship.x = this.ship.x += 7
+      if (this.ship.x > 1920) {
+        this.ship.x = 1920
+      }
+    }
+    if (keyUpObj.isDown === true) {
+      this.ship.y = this.ship.y -= 7
+      if (this.ship.y < 0) {
+        this.ship.y = 0
+      }
+    }
+    if (keyDownObj.isDown === true) {
+      this.ship.y = this.ship.y += 7
+      if (this.ship.y > 1080) {
+        this.ship.y = 1080
+      }
+    }
   }
 }
 
